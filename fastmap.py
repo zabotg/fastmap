@@ -30,7 +30,7 @@ class FMap:
     
     def farthest_point(self,distance):
         
-        obj_a = np.random.randint(0,9)
+        obj_a = np.random.randint(0,self.n_points-1)
         while True: 
             farthest = max(distance[obj_a])
             obj_b = distance[obj_a].index(farthest)
