@@ -10,9 +10,9 @@ from scipy.spatial import distance
 
 class FMap:
     
-    def __init__(self, num_dimension, newDimension = [], n_points=2):
+    def __init__(self, num_dimension, n_points=2):
         self.num_dimension = num_dimension
-        self.newDimension = newDimension
+        self.newDimension = []
         self.n_points = n_points
 
     def train(self,data):
